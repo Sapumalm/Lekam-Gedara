@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lekam Gedara — The Secretary's Residence, Sri Lanka</title>
+  <meta name="description" content="Lekam Gedara, The Secretary's Residence — a restored heritage villa in Thibiriyawa, Sri Lanka, offering elegant modern luxury within a colonial-era home." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+
+  <!-- Local Fonts -->
+  <link rel="stylesheet" href="css/fonts.css" />
+  
+  <!-- Static Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <a href="#hero" class="brand-logo" aria-label="Lekam Gedara Home">
+      <img src="images/Logo-Lekam-Gedara.png" alt="Lekam Gedara Logo" class="header-logo-img" />
+      <div class="brand-text-wrap">
+        <span class="brand-name">Lekam Gedara</span>
+        <span class="brand-sub">The Secretary's Residence • Sri Lanka</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <a href="#villa" class="nav-link">The Villa</a>
+      <a href="#dining" class="nav-link">Dining</a>
+      
+      <div class="nav-dropdown-wrapper">
+        <a href="#experiences" class="nav-dropdown-trigger">
+          <span>Experiences</span>
+          <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="#things-to-do" class="dropdown-item">Things To Do</a>
+          <a href="#cultural-tours" class="dropdown-item">Cultural Tours</a>
+        </div>
+      </div>
+
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Header CTA -->
+    <div class="header-cta">
+      <a href="#contact" class="btn-inquire">Inquire</a>
+    </div>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button id="mobile-toggle-btn" class="mobile-toggle" aria-label="Toggle menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop -->
+  <div id="mobile-backdrop" class="mobile-backdrop"></div>
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div>
+      <div class="mobile-drawer-header">
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <img src="images/Logo-Lekam-Gedara.png" alt="Lekam Gedara" class="header-logo-img" style="height:36px;" />
+          <div>
+            <span class="font-cinzel" style="font-size: 1.125rem; color: var(--cream); display: block;">Lekam Gedara</span>
+            <span style="font-size: 0.5625rem; letter-spacing: 1.5px; color: var(--beige); text-transform: uppercase;">Sri Lanka</span>
+          </div>
+        </div>
+        <button id="mobile-close-btn" style="color: var(--beige);" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <nav class="mobile-drawer-nav">
+        <a href="#villa" class="mobile-nav-link">The Villa</a>
+        <a href="#dining" class="mobile-nav-link">Dining</a>
+        
+        <div>
+          <button id="mobile-accordion-btn" class="mobile-accordion-btn">
+            <span>Experiences</span>
+            <svg class="accordion-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div id="mobile-accordion-content" class="mobile-accordion-content">
+            <a href="#things-to-do" style="color: var(--beige); font-size: 0.6875rem;">• Things To Do</a>
+            <a href="#cultural-tours" style="color: var(--beige); font-size: 0.6875rem;">• Cultural Tours</a>
+          </div>
+        </div>
+
+        <a href="#gallery" class="mobile-nav-link">Gallery</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+    </div>
+
+    <div style="padding-top: 1.5rem; border-top: 1px solid rgba(198, 183, 163, 0.2);">
+      <a href="#contact" class="btn-submit" style="display:block; text-align:center;">Plan Your Stay</a>
+    </div>
+  </div>
+
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+
+    <!-- 1. HERO CAROUSEL -->
+    <section id="hero" class="hero-section">
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <img src="images/villa-front-facade.jpg" alt="Restored colonial facade of Lekam Gedara" class="hero-slide-img" />
+
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+            <span class="animated-gradient-badge" style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 3.5px; font-weight: 500;">Restored Colonial Heritage</span>
+          </div>
+          <h1 class="font-cinzel hero-title"><span class="animated-gradient-title">A Heritage Hideaway</span></h1>
+          <p class="hero-subtitle"><span class="animated-gradient-subtitle">Elegant modern luxury within a restored Secretary's Residence in Thibiriyawa, Sri Lanka.</span></p>
+          <div><a href="#villa" class="btn-hero-cta">Explore the Villa</a></div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <img src="images/verandah-seating-corridor.jpg" alt="Verandah corridor" class="hero-slide-img" />
+
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+            <span class="animated-gradient-badge" style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 3.5px; font-weight: 500;">Architectural Authenticity</span>
+          </div>
+          <h1 class="font-cinzel hero-title"><span class="animated-gradient-title">Where Old Ceylon Meets Quiet Comfort</span></h1>
+          <p class="hero-subtitle"><span class="animated-gradient-subtitle">Deep verandahs, terracotta tile, and teak shutters, set peacefully among tropical coconut palms.</span></p>
+          <div><a href="#dining" class="btn-hero-cta">Discover Dining</a></div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <img src="images/inner-garden-courtyard.jpg" alt="Inner garden courtyard" class="hero-slide-img" />
+
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+            <span class="animated-gradient-badge" style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 3.5px; font-weight: 500;">Exclusive Villa Sanctuary</span>
+          </div>
+          <h1 class="font-cinzel hero-title"><span class="animated-gradient-title">A Residence, Entirely Yours</span></h1>
+          <p class="hero-subtitle"><span class="animated-gradient-subtitle">One villa, one reservation at a time — a private sanctuary designed for a slower, refined kind of stay.</span></p>
+          <div><a href="#things-to-do" class="btn-hero-cta">See Experiences</a></div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="hero-slide">
+        <img src="images/swimming-pool-deck-daytime.jpg" alt="Lush swimming pool deck" class="hero-slide-img" />
+
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+            <span class="animated-gradient-badge" style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 3.5px; font-weight: 500;">Sunlit Swimming Pool</span>
+          </div>
+          <h1 class="font-cinzel hero-title"><span class="animated-gradient-title">Private Pool & Tropical Gardens</span></h1>
+          <p class="hero-subtitle"><span class="animated-gradient-subtitle">Unwind by the sparkling swimming pool framed by serene greenery, swaying palms, and open breezes.</span></p>
+          <div><a href="#gallery" class="btn-hero-cta">View Pool Gallery</a></div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="hero-slide">
+        <img src="images/lake-kayaking-couple.jpg" alt="Lake kayaking couple" class="hero-slide-img" />
+
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+            <span class="animated-gradient-badge" style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 3.5px; font-weight: 500;">Activities & Cultural Tours</span>
+          </div>
+          <h1 class="font-cinzel hero-title"><span class="animated-gradient-title">Curated Island Adventures</span></h1>
+          <p class="hero-subtitle"><span class="animated-gradient-subtitle">From lake kayaking and rural village cycling to ancient UNESCO heritage discovery trails.</span></p>
+          <div><a href="#things-to-do" class="btn-hero-cta">Explore Activities</a></div>
+        </div>
+      </div>
+
+      <!-- Carousel Navigation Arrows -->
+      <button id="hero-prev-btn" class="hero-arrow prev" aria-label="Previous slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button id="hero-next-btn" class="hero-arrow next" aria-label="Next slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      <!-- Indicator Dots -->
+      <div class="hero-dots">
+        <button class="dot-btn active" aria-label="Go to slide 1"></button>
+        <button class="dot-btn" aria-label="Go to slide 2"></button>
+        <button class="dot-btn" aria-label="Go to slide 3"></button>
+        <button class="dot-btn" aria-label="Go to slide 4"></button>
+        <button class="dot-btn" aria-label="Go to slide 5"></button>
+      </div>
+
+      <!-- Slide Counter -->
+      <div class="hero-counter">
+        <span id="hero-counter-current" class="font-cinzel" style="font-size: 0.875rem; font-weight: 600; color: var(--cream);">01</span>
+        <span>/</span>
+        <span>05</span>
+      </div>
+    </section>
+
+    <div class="tile-divider"></div>
+
+    <!-- 2. VILLA SECTION -->
+    <section id="villa">
+      <div class="container">
+        <div class="villa-grid">
+          <div class="villa-text-content">
+            <div class="section-label-wrap">
+              <span class="label-line"></span>
+              <span class="section-label">The Residence</span>
+            </div>
+
+            <h2 class="section-title">
+              A Secretary's House, <span class="italic-accent">Reconsidered</span>
+            </h2>
+
+            <p>
+              Lekam Gedara takes its name from the Sinhala term for a secretary's residence — the heritage home once kept by the district's chief administrative officer. Built in the timeless vernacular style of colonial Ceylon, its hipped terracotta tile roof, deep eaves, and open verandahs have been meticulously restored.
+            </p>
+            <p>
+              Inside, the grand proportions remain untouched: high timber-beamed ceilings, wide doorways, and a generous verandah extending along the villa, framed by teak-shuttered windows painted in signature forest green. Modern luxury has been integrated with a gentle hand — whisper-quiet air conditioning, stone en-suite bathrooms, and ambient lighting.
+            </p>
+            <p>
+              Nestled on private coconut land in Thibiriyawa, the villa is reserved exclusively for one party at a time: your own private residence in Sri Lanka.
+            </p>
+
+            <div class="amenities-wrap">
+              <h3 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; color: var(--beige); font-weight: 500; margin-bottom: 1.5rem;">Residence Highlights</h3>
+              
+              <div class="amenities-grid">
+                <div class="amenity-item">
+                  <div class="check-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span class="amenity-text">Restored Colonial Facade & Terracotta Roof</span>
+                </div>
+                <div class="amenity-item">
+                  <div class="check-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span class="amenity-text">Private Broad Verandah with Teak Shutters</span>
+                </div>
+                <div class="amenity-item">
+                  <div class="check-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span class="amenity-text">Air-Conditioned Master & Guest Suites</span>
+                </div>
+                <div class="amenity-item">
+                  <div class="check-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span class="amenity-text">Private Swimming Pool & Sunbathing Lawn</span>
+                </div>
+                <div class="amenity-item">
+                  <div class="check-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span class="amenity-text">Dedicated Residence Butler & Kitchen Staff</span>
+                </div>
+                <div class="amenity-item">
+                  <div class="check-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span class="amenity-text">Secluded Coconut Palm Estate Grounds</span>
+                </div>
+                <div class="amenity-item">
+                  <div class="check-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span class="amenity-text">High-Speed Wi-Fi & Private Workspace</span>
+                </div>
+                <div class="amenity-item">
+                  <div class="check-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <span class="amenity-text">Secure On-Site Parking & Gated Entrance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-frame-wrap">
+            <div class="photo-frame">
+              <div class="corner-accent corner-tl"></div>
+              <div class="corner-accent corner-br"></div>
+
+              <img src="images/villa-main-entrance.jpg" alt="Villa main entrance of Lekam Gedara" style="width:100%; aspect-ratio:4/3; object-fit:cover;" />
+
+              <div class="photo-caption-bar">
+                <div>
+                  <span style="font-size: 0.625rem; text-transform: uppercase; letter-spacing: 2px; color: var(--beige); display: block;">Location</span>
+                  <span class="font-cinzel" style="font-size: 0.75rem; color: var(--cream); letter-spacing: 1px;">Thibiriyawa, Sri Lanka</span>
+                </div>
+                <div style="text-align: right;">
+                  <span style="font-size: 0.625rem; text-transform: uppercase; letter-spacing: 2px; color: var(--beige); display: block;">Privacy</span>
+                  <span class="font-cinzel" style="font-size: 0.75rem; color: var(--cream); letter-spacing: 1px;">Whole-Villa Buyout</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tile-divider"></div>
+
+    <!-- 3. DINING SECTION -->
+    <section id="dining" class="bg-slate-soft">
+      <div class="container">
+        <div style="max-width: 42rem; margin-bottom: 4rem;">
+          <div class="section-label-wrap">
+            <span class="label-line"></span>
+            <span class="section-label">Private Gastronomy</span>
+          </div>
+
+          <h2 class="section-title">
+            Table Set For The <span class="italic-accent">House</span>
+          </h2>
+
+          <p class="section-desc">
+            Meals at Lekam Gedara are crafted specifically for your party by our private household chef, utilizing traditional Sri Lankan home-style recipes and organic herbs gathered directly from our gardens.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <!-- Item 1 -->
+          <div class="dining-card">
+            <div class="card-img-wrap">
+              <img src="images/polished-concrete-breakfast-bar.jpg" alt="Polished Concrete Breakfast Bar" class="card-img" />
+              <div class="card-badge-num">01</div>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="font-cinzel card-title">Verandah & Bar Breakfast</h3>
+                <p style="font-size:0.75rem; color:rgba(251,249,245,0.8); font-weight:300; line-height:1.6; margin-bottom:1rem;">
+                  Crispy egg hoppers, string hoppers, spicy pol sambol, and freshly cut tropical papaya and pineapple served on the main bar or verandah.
+                </p>
+              </div>
+              <div style="padding-top:1rem; border-top:1px solid rgba(198,183,163,0.2); font-size:0.6875rem; color:var(--beige); display:flex; gap:0.5rem; align-items:flex-start;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0; margin-top:2px;"><path d="M18 2v20M6 2v20M12 2v20"/></svg>
+                <span>Served daily from 7:00 AM to 10:30 AM with fresh Ceylon estate tea or single-origin coffee.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="dining-card">
+            <div class="card-img-wrap">
+              <img src="images/dining-hall-and-kitchen.jpg" alt="Home-Style Rice & Curries Dining Hall" class="card-img" />
+              <div class="card-badge-num">02</div>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="font-cinzel card-title">Home-Style Rice & Curries</h3>
+                <p style="font-size:0.75rem; color:rgba(251,249,245,0.8); font-weight:300; line-height:1.6; margin-bottom:1rem;">
+                  A rich array of Sri Lankan curries — jackfruit, black pork or fresh lagoon prawns, dhal, and coconut sambols made to order in our open kitchen.
+                </p>
+              </div>
+              <div style="padding-top:1rem; border-top:1px solid rgba(198,183,163,0.2); font-size:0.6875rem; color:var(--beige); display:flex; gap:0.5rem; align-items:flex-start;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0; margin-top:2px;"><path d="M18 2v20M6 2v20M12 2v20"/></svg>
+                <span>Customized to your personal spice level using organic produce grown right on our estate grounds.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="dining-card">
+            <div class="card-img-wrap">
+              <img src="images/night-patio-illumination.jpg" alt="Illuminated Night Patio Dining" class="card-img" />
+              <div class="card-badge-num">03</div>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="font-cinzel card-title">Private Courtyard Dinners</h3>
+                <p style="font-size:0.75rem; color:rgba(251,249,245,0.8); font-weight:300; line-height:1.6; margin-bottom:1rem;">
+                  Intimate candle-lit multi-course dinners laid out under the open night sky in the courtyard or near the illuminated pool.
+                </p>
+              </div>
+              <div style="padding-top:1rem; border-top:1px solid rgba(198,183,163,0.2); font-size:0.6875rem; color:var(--beige); display:flex; gap:0.5rem; align-items:flex-start;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0; margin-top:2px;"><path d="M18 2v20M6 2v20M12 2v20"/></svg>
+                <span>Arranged with your private butler and residence caretaker for special celebrations.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <div style="max-width: 42rem;">
+            <h4 class="font-cinzel" style="font-size: 1.125rem; color: var(--cream); margin-bottom: 0.5rem;">Special Dietary Preferences & Private Banquets</h4>
+            <p style="font-size: 0.75rem; color: rgba(251,249,245,0.7); font-weight: 300;">We cater to vegetarian, vegan, seafood-only, or custom spice requests. Discuss your menu before arrival with our caretaker.</p>
+          </div>
+          <a href="#contact" class="btn-inquire" style="white-space: nowrap;">Arrange Private Dining</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="tile-divider"></div>
+
+    <!-- 4. THINGS TO DO SECTION -->
+    <section id="things-to-do">
+      <div class="container">
+        <div style="max-width: 42rem; margin-bottom: 4rem;">
+          <div class="section-label-wrap">
+            <span class="label-line"></span>
+            <span class="section-label">Outdoor & Village Experiences</span>
+          </div>
+
+          <h2 class="section-title">
+            Things <span class="italic-accent">To Do</span>
+          </h2>
+
+          <p class="section-desc">
+            Step beyond the verandah to explore the pristine waterbodies, quiet rural village roads, and authentic lifestyle of Thibiriyawa.
+          </p>
+        </div>
+
+        <div class="cards-grid-2">
+          <!-- Item 1 -->
+          <div class="activity-card">
+            <div class="card-img-wrap" style="height: 16rem;">
+              <img src="images/lake-kayaking-couple.jpg" alt="Lake Kayaking" class="card-img" />
+              <div class="badge-category">Water Experience</div>
+              <div class="badge-duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--beige)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>1.5 – 2 Hours</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="font-cinzel card-title" style="font-size: 1.5rem;">Kayaking on a Calm Lake</h3>
+                <p style="font-size: 0.8125rem; color: rgba(251,249,245,0.8); font-weight: 300; line-height: 1.6; margin-bottom: 1.5rem;">
+                  Glide silently across mirror-still lake waters surrounded by water lilies, lotus blooms, and kingfishers.
+                </p>
+                <div class="included-tags">
+                  <span class="tag-inc">✓ Kayaks & Paddles</span>
+                  <span class="tag-inc">✓ Safety Vests</span>
+                  <span class="tag-inc">✓ Local Guide</span>
+                </div>
+              </div>
+              <div class="card-footer-btn">
+                <div style="font-size:0.75rem; color:var(--beige); display:flex; align-items:center; gap:0.375rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+                  <span>Peaceful waters & birdwatching</span>
+                </div>
+                <button class="btn-details btn-activity-details" data-id="kayaking">
+                  <span>Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="activity-card">
+            <div class="card-img-wrap" style="height: 16rem;">
+              <img src="images/inflatable-boat-lake-activity.jpg" alt="Lake Rafting" class="card-img" />
+              <div class="badge-category">Country Excursion</div>
+              <div class="badge-duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--beige)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>2 Hours</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="font-cinzel card-title" style="font-size: 1.5rem;">Inflatable Lake Rafting & Cycling</h3>
+                <p style="font-size: 0.8125rem; color: rgba(251,249,245,0.8); font-weight: 300; line-height: 1.6; margin-bottom: 1.5rem;">
+                  Explore the gentle rhythm of rural Thibiriyawa. Enjoy lake rafting or cycle along shady dirt tracks, past emerald paddy fields.
+                </p>
+                <div class="included-tags">
+                  <span class="tag-inc">✓ Quality Boats / Bikes</span>
+                  <span class="tag-inc">✓ Safety Vests</span>
+                  <span class="tag-inc">✓ Guided Escort</span>
+                </div>
+              </div>
+              <div class="card-footer-btn">
+                <div style="font-size:0.75rem; color:var(--beige); display:flex; align-items:center; gap:0.375rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+                  <span>Lake boating & village trails</span>
+                </div>
+                <button class="btn-details btn-activity-details" data-id="cycling">
+                  <span>Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="activity-card">
+            <div class="card-img-wrap" style="height: 16rem;">
+              <img src="images/wooden-pantry-bar-corner.jpg" alt="Culinary Class Pantry" class="card-img" />
+              <div class="badge-category">Culinary Experience</div>
+              <div class="badge-duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--beige)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>2.5 Hours</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="font-cinzel card-title" style="font-size: 1.5rem;">Sri Lankan Culinary Masterclass</h3>
+                <p style="font-size: 0.8125rem; color: rgba(251,249,245,0.8); font-weight: 300; line-height: 1.6; margin-bottom: 1.5rem;">
+                  Join our residence chef in the kitchen to harvest fresh curry leaves and coconut, scrape coconut, and cook clay-pot curries.
+                </p>
+                <div class="included-tags">
+                  <span class="tag-inc">✓ Garden Herb Tour</span>
+                  <span class="tag-inc">✓ Cooking Session</span>
+                  <span class="tag-inc">✓ Full Tasting</span>
+                </div>
+              </div>
+              <div class="card-footer-btn">
+                <div style="font-size:0.75rem; color:var(--beige); display:flex; align-items:center; gap:0.375rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+                  <span>Clay pot cooking & fresh spices</span>
+                </div>
+                <button class="btn-details btn-activity-details" data-id="cooking-class">
+                  <span>Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="activity-card">
+            <div class="card-img-wrap" style="height: 16rem;">
+              <img src="images/kayak-lake-bank-dusk.jpg" alt="Nature Walk Dusk" class="card-img" />
+              <div class="badge-category">Nature Trail</div>
+              <div class="badge-duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--beige)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>1.5 Hours</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3 class="font-cinzel card-title" style="font-size: 1.5rem;">Dawn Birdwatching & Nature Walk</h3>
+                <p style="font-size: 0.8125rem; color: rgba(251,249,245,0.8); font-weight: 300; line-height: 1.6; margin-bottom: 1.5rem;">
+                  Sri Lanka's northwestern wetlands host over 60 bird species. Walk with our resident naturalist around the lake edge at first light.
+                </p>
+                <div class="included-tags">
+                  <span class="tag-inc">✓ Binoculars Provided</span>
+                  <span class="tag-inc">✓ Field Guide</span>
+                  <span class="tag-inc">✓ Dawn Herbal Tea</span>
+                </div>
+              </div>
+              <div class="card-footer-btn">
+                <div style="font-size:0.75rem; color:var(--beige); display:flex; align-items:center; gap:0.375rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+                  <span>Native peacocks & kingfishers</span>
+                </div>
+                <button class="btn-details btn-activity-details" data-id="birdwatching">
+                  <span>Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tile-divider"></div>
+
+    <!-- 5. CULTURAL TOURS SECTION -->
+    <section id="cultural-tours" class="bg-slate-soft">
+      <div class="container">
+        <div style="max-width: 42rem; margin-bottom: 4rem;">
+          <div class="section-label-wrap">
+            <span class="label-line"></span>
+            <span class="section-label">Ancient Ceylon & Heritage Trails</span>
+          </div>
+
+          <h2 class="section-title">
+            Cultural & Heritage <span class="italic-accent">Tours</span>
+          </h2>
+
+          <p class="section-desc">
+            Privately guided day excursions arranged on request directly from the residence, taking you to UNESCO World Heritage caves, ancient rock fortresses, and village artisan pottery guilds.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <!-- Tour 1 -->
+          <div class="dining-card">
+            <div class="card-img-wrap" style="height: 16rem;">
+              <img src="images/historical-appointment-certificate.png" alt="1941 Certificate" class="card-img" />
+              <div class="badge-category">Colonial History</div>
+            </div>
+            <div class="card-body">
+              <div>
+                <div style="font-size:0.75rem; color:var(--beige); font-weight:300; margin-bottom:0.75rem; display:flex; gap:0.75rem;">
+                  <span>Full Day (7–8 Hours)</span>
+                  <span>•</span>
+                  <span>Colonial Heritage</span>
+                </div>
+                <h3 class="font-cinzel card-title">1941 Heritage Registrar Trail</h3>
+                <p style="font-size:0.75rem; color:rgba(251,249,245,0.8); font-weight:300; line-height:1.6; margin-bottom:1.5rem;">
+                  Discover the authentic 1941 Registrar Appointment history of Lekam Gedara and explore nearby heritage landmarks.
+                </p>
+              </div>
+              <div class="card-footer-btn">
+                <span style="font-size:0.625rem; text-transform:uppercase; letter-spacing:2px; color:var(--beige);">Private Chauffeur</span>
+                <button class="btn-details btn-tour-details" data-id="dambulla-tour">
+                  <span>View Itinerary</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 2 -->
+          <div class="dining-card">
+            <div class="card-img-wrap" style="height: 16rem;">
+              <img src="images/kayak-lake-view.jpg" alt="Yapahuwa" class="card-img" />
+              <div class="badge-category">Historical Kingdom</div>
+            </div>
+            <div class="card-body">
+              <div>
+                <div style="font-size:0.75rem; color:var(--beige); font-weight:300; margin-bottom:0.75rem; display:flex; gap:0.75rem;">
+                  <span>Half Day (4–5 Hours)</span>
+                  <span>•</span>
+                  <span>35 km from villa</span>
+                </div>
+                <h3 class="font-cinzel card-title">Yapahuwa Rock Citadel & Temple Trail</h3>
+                <p style="font-size:0.75rem; color:rgba(251,249,245,0.8); font-weight:300; line-height:1.6; margin-bottom:1.5rem;">
+                  Ascend the dramatic stone staircase of Yapahuwa, the 13th-century rock fortress capital famous for its carved lion portal.
+                </p>
+              </div>
+              <div class="card-footer-btn">
+                <span style="font-size:0.625rem; text-transform:uppercase; letter-spacing:2px; color:var(--beige);">Private Chauffeur</span>
+                <button class="btn-details btn-tour-details" data-id="yapahuwa-tour">
+                  <span>View Itinerary</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 3 -->
+          <div class="dining-card">
+            <div class="card-img-wrap" style="height: 16rem;">
+              <img src="images/night-garden-stone-pathway.jpg" alt="Pottery Workshop" class="card-img" />
+              <div class="badge-category">Cultural Crafts</div>
+            </div>
+            <div class="card-body">
+              <div>
+                <div style="font-size:0.75rem; color:var(--beige); font-weight:300; margin-bottom:0.75rem; display:flex; gap:0.75rem;">
+                  <span>3 Hours</span>
+                  <span>•</span>
+                  <span>12 km from villa</span>
+                </div>
+                <h3 class="font-cinzel card-title">Village Crafts & Traditional Pottery</h3>
+                <p style="font-size:0.75rem; color:rgba(251,249,245,0.8); font-weight:300; line-height:1.6; margin-bottom:1.5rem;">
+                  Visit traditional artisan families in nearby villages who have shaped clay pottery on kick-wheels for generations.
+                </p>
+              </div>
+              <div class="card-footer-btn">
+                <span style="font-size:0.625rem; text-transform:uppercase; letter-spacing:2px; color:var(--beige);">Local Guide</span>
+                <button class="btn-details btn-tour-details" data-id="artisan-pottery">
+                  <span>View Itinerary</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tile-divider"></div>
+
+    <!-- 6. GALLERY SECTION -->
+    <section id="gallery">
+      <div class="container">
+        <div style="max-width: 42rem; margin-bottom: 3rem;">
+          <div class="section-label-wrap">
+            <span class="label-line"></span>
+            <span class="section-label">Gallery & Atmosphere</span>
+          </div>
+
+          <h2 class="section-title">
+            The Residence, <span class="italic-accent">In Light</span>
+          </h2>
+
+          <p class="section-desc">
+            Filter our photography by category to preview the restored colonial architecture, refined interior suites, tranquil swimming pool, and outdoor experiences.
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="gallery-tabs">
+          <button class="tab-btn active" data-cat="All">All</button>
+          <button class="tab-btn" data-cat="Interior">Interior</button>
+          <button class="tab-btn" data-cat="Exterior">Exterior</button>
+          <button class="tab-btn" data-cat="Swimming Pool">Swimming Pool</button>
+          <button class="tab-btn" data-cat="Activities">Activities</button>
+        </div>
+
+        <!-- Gallery Grid (Rendered by JS) -->
+        <div id="gallery-grid" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <div class="tile-divider"></div>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="bg-slate-soft">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <div class="section-label-wrap">
+              <span class="label-line"></span>
+              <span class="section-label">Inquiries & Reservations</span>
+            </div>
+
+            <h2 class="section-title">
+              Plan Your <span class="italic-accent">Stay</span>
+            </h2>
+
+            <p class="section-desc" style="margin-bottom: 2.5rem;">
+              For whole-villa buyouts, private dining arrangements, or tailored island activity itineraries, write to us directly. A member of the household will reply within 24 hours.
+            </p>
+
+            <!-- Info List -->
+            <div class="info-card">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--beige)" stroke-width="2" style="flex-shrink:0; margin-top:2px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <span style="font-size:0.625rem; text-transform:uppercase; letter-spacing:2px; color:var(--beige); display:block; margin-bottom:0.25rem;">Residence Address</span>
+                <span style="font-size:0.75rem; color:var(--cream); font-weight:300; line-height:1.5;">Lekam Gedara, Thibiriyawa, North Western Province, Sri Lanka</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--beige)" stroke-width="2" style="flex-shrink:0; margin-top:2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <span style="font-size:0.625rem; text-transform:uppercase; letter-spacing:2px; color:var(--beige); display:block; margin-bottom:0.25rem;">Direct Email</span>
+                <span style="font-size:0.75rem; color:var(--cream); font-weight:300;">stay@lekamgedara.lk</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--beige)" stroke-width="2" style="flex-shrink:0; margin-top:2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <span style="font-size:0.625rem; text-transform:uppercase; letter-spacing:2px; color:var(--beige); display:block; margin-bottom:0.25rem;">Telephone & WhatsApp</span>
+                <span style="font-size:0.75rem; color:var(--cream); font-weight:300;">+94 77 123 4567 / +94 37 888 9900</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Card -->
+          <div class="contact-form-card">
+            <form id="contact-form">
+              <div class="form-row">
+                <div>
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" id="input-fullname" required placeholder="Your full name" class="form-control" />
+                </div>
+                <div>
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" id="input-email" required placeholder="you@example.com" class="form-control" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label class="form-label">Party Size</label>
+                  <select id="input-partysize" class="form-control">
+                    <option>1 – 2 Guests</option>
+                    <option>3 – 5 Guests</option>
+                    <option>6 – 8 Guests</option>
+                    <option>9+ Guests (Exclusive Villa)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="form-label">Primary Interest</label>
+                  <select id="input-interest" class="form-control">
+                    <option>General Inquiry</option>
+                    <option>Kayaking & Outdoor Activities</option>
+                    <option>Rural Village Cycling</option>
+                    <option>Cultural & Heritage Tours</option>
+                    <option>Private Dining Experience</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="margin-bottom: 1.5rem;">
+                <label class="form-label">Tentative Stay Dates / Message</label>
+                <textarea rows="4" placeholder="Tell us about your preferred dates, stay duration, or special arrangements..." class="form-control" style="resize:none;"></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <span>Send Inquiry</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <p style="font-size:0.625rem; color:rgba(251,249,245,0.5); text-align:center; font-weight:300; margin-top:1rem;">
+                This form routes a direct message to the residence caretaker. It is not an automated instant booking.
+              </p>
+            </form>
+
+            <!-- Success State -->
+            <div id="form-status-success" style="display:none; text-align:center; padding: 3rem 1rem;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--beige)" stroke-width="1.5" style="margin: 0 auto 1.5rem;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <h3 class="font-cinzel" style="font-size: 1.5rem; color: var(--cream); margin-bottom: 0.75rem;">Inquiry Sent Successfully</h3>
+              <p style="font-size: 0.8125rem; color: rgba(251,249,245,0.8); font-weight: 300; max-width: 24rem; margin: 0 auto 1.5rem; line-height: 1.6;">
+                Thank you, <span id="success-user-name" style="color:var(--beige); font-weight:500;">Guest</span>. Our household caretaker has received your message regarding <span id="success-interest" style="color:var(--beige);">General Inquiry</span> and will respond shortly.
+              </p>
+              <button id="btn-reset-form" class="btn-submit" style="width: auto; padding: 0.625rem 1.5rem; margin: 0 auto;">
+                Send Another Inquiry
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="tile-divider" style="margin-bottom: 2rem;"></div>
+
+    <div class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:space-between; gap:2rem; padding-bottom:2rem; border-bottom:1px solid rgba(198,183,163,0.2);">
+        <div style="text-align:center; display:flex; flex-direction:column; align-items:center;">
+          <img src="images/Logo-Lekam-Gedara.png" alt="Lekam Gedara Logo" class="header-logo-img" style="height:56px; margin-bottom:0.5rem;" />
+          <span class="font-cinzel" style="font-size:1.25rem; letter-spacing:3px; color:var(--cream); display:block;">Lekam Gedara</span>
+          <span style="font-size:0.625rem; letter-spacing:2.5px; text-transform:uppercase; color:var(--beige); font-weight:500; margin-top:0.25rem; display:block;">
+            The Secretary's Residence • Thibiriyawa, Sri Lanka
+          </span>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#villa">The Villa</a></li>
+          <li><a href="#dining">Dining</a></li>
+          <li><a href="#things-to-do">Things To Do</a></li>
+          <li><a href="#cultural-tours">Cultural Tours</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div style="padding-top:1.5rem; display:flex; flex-direction:column; align-items:center; justify-content:space-between; gap:1rem; font-size:0.6875rem; color:rgba(251,249,245,0.5); font-weight:300;">
+        <p>© <span id="copyright-year"></span> Lekam Gedara, The Secretary's Residence. All rights reserved.</p>
+        <p style="color:rgba(198,183,163,0.8);">Restored Colonial Heritage Villa • Thibiriyawa, Sri Lanka</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================= MODALS ================= -->
+
+  <!-- 1. Activity Modal -->
+  <div id="activity-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="activity-modal-close" class="modal-close-btn" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <span id="modal-act-category" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:2.5px; color:var(--beige); font-weight:500; display:block; margin-bottom:0.5rem;">Water Experience</span>
+      <h3 id="modal-act-title" class="font-cinzel" style="font-size:1.75rem; color:var(--cream); margin-bottom:1rem;">Kayaking</h3>
+      
+      <div style="position:relative; height:15rem; margin-bottom:1.5rem; border:1px solid rgba(198,183,163,0.3); overflow:hidden;">
+        <img id="modal-act-img" src="" alt="" style="width:100%; height:100%; object-fit:cover;" />
+      </div>
+
+      <p id="modal-act-desc" style="font-size:0.875rem; color:rgba(251,249,245,0.8); font-weight:300; line-height:1.6; margin-bottom:1.5rem;"></p>
+
+      <div style="background-color:var(--slate-soft); padding:1rem; border:1px solid rgba(198,183,163,0.2); margin-bottom:1.5rem;">
+        <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:2px; color:var(--beige); font-weight:500; display:block; margin-bottom:0.75rem;">Inclusions & Provisions</span>
+        <div id="modal-act-included" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.5rem;"></div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-top:1rem; border-top:1px solid rgba(198,183,163,0.2);">
+        <span id="modal-act-duration" style="font-size:0.75rem; color:var(--beige);">Duration: 1.5 Hours</span>
+        <a href="#contact" onclick="document.getElementById('activity-modal').classList.remove('active');" class="btn-submit" style="width:auto; padding:0.5rem 1.25rem;">Inquire Activity</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Tour Modal -->
+  <div id="tour-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="tour-modal-close" class="modal-close-btn" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <span id="modal-tour-type" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:2.5px; color:var(--beige); font-weight:500; display:block; margin-bottom:0.5rem;">Colonial History</span>
+      <h3 id="modal-tour-title" class="font-cinzel" style="font-size:1.75rem; color:var(--cream); margin-bottom:1rem;">History Trail</h3>
+      
+      <div style="position:relative; height:15rem; margin-bottom:1.5rem; border:1px solid rgba(198,183,163,0.3); overflow:hidden;">
+        <img id="modal-tour-img" src="" alt="" style="width:100%; height:100%; object-fit:cover;" />
+      </div>
+
+      <p id="modal-tour-desc" style="font-size:0.875rem; color:rgba(251,249,245,0.8); font-weight:300; line-height:1.6; margin-bottom:1.5rem;"></p>
+
+      <div style="background-color:var(--slate-soft); padding:1rem; border:1px solid rgba(198,183,163,0.2); margin-bottom:1.5rem;">
+        <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:2px; color:var(--beige); font-weight:500; display:block; margin-bottom:0.75rem;">Tour Highlights</span>
+        <div id="modal-tour-highlights" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.5rem;"></div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-top:1rem; border-top:1px solid rgba(198,183,163,0.2);">
+        <span id="modal-tour-info" style="font-size:0.75rem; color:var(--beige);">Duration & Distance</span>
+        <a href="#contact" onclick="document.getElementById('tour-modal').classList.remove('active');" class="btn-submit" style="width:auto; padding:0.5rem 1.25rem;">Book Private Tour</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-overlay">
+    <button id="lightbox-close" class="modal-close-btn" style="top:1.5rem; right:1.5rem;" aria-label="Close Lightbox">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
+    <button id="lightbox-prev" class="lightbox-arrow prev" aria-label="Previous Image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button id="lightbox-next" class="lightbox-arrow next" aria-label="Next Image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+
+    <div style="max-width:56rem; width:100%; display:flex; flex-direction:column; align-items:center;">
+      <div style="position:relative; width:100%; max-height:75vh; display:flex; align-items:center; justify-content:center; border:1px solid rgba(198,183,163,0.3); background-color:var(--slate); padding:0.5rem; margin-bottom:1rem;">
+        <img id="lightbox-img" src="" alt="" style="max-height:70vh; max-width:100%; object-contain:contain;" />
+      </div>
+
+      <div style="text-align:center; max-width:36rem;">
+        <span id="lightbox-category" style="font-size:0.625rem; text-transform:uppercase; letter-spacing:3px; color:var(--beige); font-weight:500; display:block; margin-bottom:0.25rem;">Category</span>
+        <h3 id="lightbox-title" class="font-cinzel" style="font-size:1.35rem; color:var(--cream); margin-bottom:0.5rem;">Title</h3>
+        <p id="lightbox-desc" style="font-size:0.8125rem; color:rgba(251,249,245,0.8); font-weight:300; line-height:1.5;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Entry Point -->
+  <script src="js/main.js"></script>
+</body>
+</html>
